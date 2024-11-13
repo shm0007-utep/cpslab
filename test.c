@@ -65,6 +65,7 @@ int main(int argc, char * argv[]) {
   }
   //
   printf("%s %lf\n", lib == 1 ? "loop" : "library", dotprod);
+  end = clock();
   cpu_time_used = ((double)(end - start)) / CLOCKS_PER_SEC;
   // print the result
   printf("This task took %f seconds to execute \n", cpu_time_used);
